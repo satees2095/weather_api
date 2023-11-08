@@ -14,7 +14,7 @@ public class ClientUtil {
   public WeatherResponse getWetherReportByCity(String city) throws Exception {
     HttpRequest request = HttpRequest.newBuilder()
         .uri(URI.create("https://forecast9.p.rapidapi.com/rapidapi/forecast/" + city + "/summary/"))
-        .header("X-RapidAPI-Key", "5fa9c65ed5msh80c3cdc276b8bdep1f4908jsn10f52203baf4")
+        .header("X-RapidAPI-Key", "Enter your rapid API key")
         .header("X-RapidAPI-Host", "forecast9.p.rapidapi.com")
         .method("GET", HttpRequest.BodyPublishers.noBody())
         .build();
@@ -29,7 +29,7 @@ public class ClientUtil {
   public WeatherResponse getHourlyWeatherReportOfCity(String city) throws Exception {
     HttpRequest request = HttpRequest.newBuilder()
         .uri(URI.create("https://forecast9.p.rapidapi.com/rapidapi/forecast/" + city + "/hourly/"))
-        .header("X-RapidAPI-Key", "5fa9c65ed5msh80c3cdc276b8bdep1f4908jsn10f52203baf4")
+        .header("X-RapidAPI-Key", "Enter your rapid API key")
         .header("X-RapidAPI-Host", "forecast9.p.rapidapi.com")
         .method("GET", HttpRequest.BodyPublishers.noBody())
         .build();
